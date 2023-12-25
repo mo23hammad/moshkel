@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    {% for co in contactall %}
+        <a href="/detail/{{co.id}}">{{co.title}}</a><br>
+    {% endfor %}
+    <p>
+        didi dadi
+    </p>
+</html>
+{% endblock content %}

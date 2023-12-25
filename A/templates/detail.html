@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detail</title>
+</head>
+<body>
+    <a href="{% url 'delete' ghavam.id %}" class="btn btn-danger">Delete</a>
+    <h1>{{ghavam.title}}</h1>
+    <small>{{ghavam.created}}</small>
+    <p>{{ghavam.body}}</p>
+</body>
+</html>
+{% endblock content %}
